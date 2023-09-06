@@ -5,6 +5,78 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* background-color: white; */
+}
+.heading_style{
+  margin-inline: 50px;
+  padding: 30px 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: rgba(4, 4, 4, 0.533);
+  background-color: cornflowerblue;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.cards{
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-inline: 50px;
+  gap: 15px; */
+  width: 100%;
+  height: auto;
+}
+.card{
+  margin: 6%;
+  width: 21.25%;
+  transition: all 0.4s cubic-bezier(0.175,0.885,0,1);
+  /* text-align: center; */
+  border-radius: 20px;
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transform: scale(1.05,1.05);
+}
+.card_img{
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card_info
+{
+  margin: 0;
+  /* border-radius: 20px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  padding: 20px;
+  background-color: darkorange;
+}
+.card_title
+{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.card button{
+  color: blue;
+  padding: 5px 8px;
+  border: none;
+  width: 130px;
+  height: 35px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
 }
 
 code {
